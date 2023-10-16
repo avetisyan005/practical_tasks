@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html> <div class="form-wrap">
+    <h1>Анкета</h1>
+</div>
+<form method="post" action="form.php">
+<div>
+  <label for="name">Фамилия</label>
+  <input type="text" name="name" required>
+</div>
 
+<div>
+  <label for="name">Имя</label>
+  <input type="text" name="name" required>
+</div>
+
+<div>
+  <label for="country">Страна</label>
+  <select name="country">
+    <option>Выберите страну проживания</option>
+    <option value=>Россия</option> 
+    <option value="США">США</option> 
+    <option value="Украина">Украина</option> 
+    <option value="Беларусь">Беларусь</option> 
+    <option value="Армения">Армения</option> 
+  </select> 
+  <div class="select-arrow"></div> 
+</div> 
+<p><b>О себе:</b></p>
+  <p><textarea name="comment"></textarea></p>
+  <div class="radio">
+    <span>Пол</span>
+    <label>
+      <input type="radio" name="sex" value="мужской">мужской
+      <div class="radio-control male"></div>
+    </label>
+    <label>
+     <input type="radio" name="sex" value="женский">женский
+    <div class="radio-control female"></div>
+  </label>
+
+    <div>
+        <label for="date">Дата рождения</label>
+        <input type="text" date="date" required>
+      </div>
+
+      <div>
+        <label for="email">E-mail</label>
+        <input type="email" name="email" required>
+      </div>
+      <p><select name="select" size="3" multiple>Образование
+        <option selected value="s1">Общее очное образование </option>
+        <option value="s2">Общее заочное образование</option>
+        <option value="s3">Профессиональное очное образование</option>
+        <option value="s4">Профессиональное заочное образование</option>
+        <option value="s4">Дополнительное образование</option>
+       </select>
+<p><input type="button" value=" Отправить "></p>
+</div>
+</html> 
